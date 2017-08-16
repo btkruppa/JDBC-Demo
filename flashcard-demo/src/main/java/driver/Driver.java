@@ -2,6 +2,7 @@ package driver;
 
 import org.apache.log4j.Logger;
 
+import beans.Flashcard;
 import dao.FlashcardDAO;
 import dao.FlashcardDAOImpl;
 
@@ -20,9 +21,13 @@ public class Driver {
 		// swallow",
 		// "is it African or European");
 		// log.info(fd.insertFlashcard(newFlashcard));
+
+		// fd.preparedStatementInsert();
+		// "update flashcard set question = '" + flashcard.getQuestion() + "', answer =
+		// '"
 		
-		fd.preparedStatementInsert();
-		
-		
+		fd.updateFlashcard(new Flashcard(13,
+				"whatever", "dont really care"));
+
 	}
 }

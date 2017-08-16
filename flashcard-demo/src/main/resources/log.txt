@@ -53,3 +53,27 @@
 2017-08-16 14:53:24 ERROR root:144 - Non supported SQL92 token at position: 69
 2017-08-16 14:53:42 ERROR root:144 - ORA-00933: SQL command not properly ended
 
+2017-08-16 15:13:53 ERROR root:59 - ORA-00933: SQL command not properly ended
+
+2017-08-16 15:14:37 ERROR root:59 - ORA-00933: SQL command not properly ended
+
+2017-08-16 15:15:43 ERROR root:59 - ORA-00001: unique constraint (FLASHCARD.SYS_C005207) violated
+
+2017-08-16 15:16:13 ERROR root:59 - ORA-00001: unique constraint (FLASHCARD.SYS_C005207) violated
+
+2017-08-16 15:17:31 ERROR root:60 - ORA-00001: unique constraint (FLASHCARD.SYS_C005207) violated
+
+2017-08-16 15:19:05 TRACE root:22 - creating ConnectionUtil singleton
+2017-08-16 15:19:05 TRACE root:24 - properties file is {}
+2017-08-16 15:19:05 TRACE root:26 - jdbc:oracle:thin:@orcl.cixj48tduq7e.us-west-2.rds.amazonaws.com:1521:ORCL
+2017-08-16 15:19:05 TRACE root:52 - attempting to update: Flashcard [flashcardId=13, question=whatever' --, answer=dont really care]
+2017-08-16 15:19:05 DEBUG root:41 - Attempting to get connection to DB
+2017-08-16 15:19:05 TRACE root:43 -  {url=jdbc:oracle:thin:@orcl.cixj48tduq7e.us-west-2.rds.amazonaws.com:1521:ORCL, driver=oracle.jdbc.driver.OracleDriver, pwd=p4ssw0rd, usr=flashcard}
+2017-08-16 15:19:09 ERROR root:60 - ORA-00001: unique constraint (FLASHCARD.SYS_C005207) violated
+
+2017-08-16 15:21:14 TRACE root:22 - creating ConnectionUtil singleton
+2017-08-16 15:21:14 TRACE root:24 - properties file is {}
+2017-08-16 15:21:14 TRACE root:26 - jdbc:oracle:thin:@orcl.cixj48tduq7e.us-west-2.rds.amazonaws.com:1521:ORCL
+2017-08-16 15:21:14 TRACE root:52 - attempting to update: Flashcard [flashcardId=13, question=whatever, answer=dont really care]
+2017-08-16 15:21:14 DEBUG root:41 - Attempting to get connection to DB
+2017-08-16 15:21:14 TRACE root:43 -  {url=jdbc:oracle:thin:@orcl.cixj48tduq7e.us-west-2.rds.amazonaws.com:1521:ORCL, driver=oracle.jdbc.driver.OracleDriver, pwd=p4ssw0rd, usr=flashcard}

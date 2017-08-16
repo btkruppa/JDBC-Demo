@@ -49,8 +49,19 @@ public class FlashcardDAOImpl implements FlashcardDAO {
 
 	@Override
 	public boolean updateFlashcard(Flashcard flashcard) {
-		// TODO Auto-generated method stub
+		log.trace("attempting to update: " + flashcard);
+		try (Connection conn = connUtil.getConnection()) {
+			String sql = "update flashcard set question = '" + flashcard.getQuestion() + "', answer = '"
+					+ flashcard.getAnswer() + "' where flashcardid = " + flashcard.getFlashcardId();
+			conn.createStatement().executeQuery(sql);
+			return true;
+
+		} catch (SQLException e) {
+			log.error(e.getMessage());
+			e.printStackTrace();
+		}
 		return false;
+
 	}
 
 	@Override
