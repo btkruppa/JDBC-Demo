@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 import org.apache.log4j.Logger;
 
@@ -18,6 +19,7 @@ public class FlashcardDAOImpl implements FlashcardDAO {
 
 	private ConnectionUtil connUtil = ConnectionUtil.getConnectionUtil();
 
+	@Override
 	public long insertFlashcard(Flashcard flashcard) {
 		log.trace("inserting new flashcard ");
 		Connection conn = connUtil.getConnection();
@@ -45,11 +47,13 @@ public class FlashcardDAOImpl implements FlashcardDAO {
 		return 0;
 	}
 
+	@Override
 	public boolean updateFlashcard(Flashcard flashcard) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
+	@Override
 	public Flashcard getFlashcardById(long id) {
 		log.trace("getting flashcard with id " + id);
 		Flashcard fc = null;
@@ -80,6 +84,7 @@ public class FlashcardDAOImpl implements FlashcardDAO {
 		return fc;
 	}
 
+	@Override
 	public List<Flashcard> getAllFlashcards() {
 		log.trace("getting all flashcards");
 		List<Flashcard> fcList = new ArrayList<Flashcard>();
@@ -107,6 +112,39 @@ public class FlashcardDAOImpl implements FlashcardDAO {
 			}
 		}
 		return fcList;
+	}
+
+	@Override
+	public void preparedStatementInsert() {
+
+		String question = null;
+		String answer = null;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Question:");
+		question = scan.nextLine();
+		System.out.println("Answer:");
+		answer = scan.nextLine();
+
+		String sql = "insert into flashcard (Question, Answer) values(?,?)";
+		try (Connection conn = connUtil.getConnection()) {
+			PreparedStatement prep = conn.prepareStatement(sql, new String[] { "flashcardid" });
+
+			prep.setString(1, question);
+			prep.setString(2, answer);
+
+			log.trace(prep.executeUpdate() + " rows updated.");
+
+			ResultSet generatedKeys = prep.getGeneratedKeys();
+
+			if (generatedKeys.next()) {
+				System.out.println(generatedKeys.getLong(1));
+			}
+
+		} catch (SQLException e) {
+			log.error(e.getMessage());
+			e.printStackTrace();
+		}
+
 	}
 
 }

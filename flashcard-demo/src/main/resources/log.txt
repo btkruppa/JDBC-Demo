@@ -45,3 +45,11 @@
 2017-08-16 11:41:14 TRACE root:41 - Attempting to get connection to DB
 2017-08-16 11:41:14 TRACE root:43 -  {url=jdbc:oracle:thin:@orcl.cixj48tduq7e.us-west-2.rds.amazonaws.com:1521:ORCL, driver=oracle.jdbc.driver.OracleDriver, pwd=p4ssw0rd, usr=flashcard}
 2017-08-16 12:12:05 INFO  root:22 - 7
+2017-08-16 14:15:23 ERROR root:144 - operation not allowed
+2017-08-16 14:19:21 ERROR root:144 - operation not allowed
+2017-08-16 14:20:27 ERROR root:144 - ORA-00001: unique constraint (FLASHCARD.SYS_C005207) violated
+
+2017-08-16 14:20:59 ERROR root:144 - operation not allowed
+2017-08-16 14:53:24 ERROR root:144 - Non supported SQL92 token at position: 69
+2017-08-16 14:53:42 ERROR root:144 - ORA-00933: SQL command not properly ended
+

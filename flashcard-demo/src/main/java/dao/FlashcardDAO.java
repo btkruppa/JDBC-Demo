@@ -26,4 +26,6 @@ public interface FlashcardDAO {
 
 	public List<Flashcard> getAllFlashcards();
 
+	void preparedStatementInsert();
+
 }
