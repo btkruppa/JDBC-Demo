@@ -1,0 +1,4 @@
+INSERT INTO FLASHCARD(QUESTION, ANSWER) VALUES('What is Java?', 'Java is fun.');
+
+INSERT INTO FLASHCARD(QUESTION, ANSWER) VALUES('I am cool', 'no');
+commit;

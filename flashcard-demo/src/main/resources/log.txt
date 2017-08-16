@@ -1,0 +1,47 @@
+2017-08-16 11:31:23 TRACE root:21 - creating ConnectionUtil singleton
+2017-08-16 11:31:50 TRACE root:21 - creating ConnectionUtil singleton
+2017-08-16 11:31:50 TRACE root:23 - properties file isnull
+2017-08-16 11:32:36 TRACE root:21 - creating ConnectionUtil singleton
+2017-08-16 11:32:36 TRACE root:23 - properties file is null
+2017-08-16 11:34:31 TRACE root:22 - creating ConnectionUtil singleton
+2017-08-16 11:34:31 TRACE root:24 - properties file is null
+2017-08-16 11:34:47 TRACE root:22 - creating ConnectionUtil singleton
+2017-08-16 11:34:47 TRACE root:25 - properties file is {}
+2017-08-16 11:34:47 TRACE root:29 - getting flashcard with id 1
+2017-08-16 11:34:47 TRACE root:41 - Attempting to get connection to DB
+2017-08-16 11:36:18 TRACE root:26 - creating ConnectionUtil singleton
+2017-08-16 11:36:18 TRACE root:28 - properties file is null
+2017-08-16 11:36:41 TRACE root:26 - creating ConnectionUtil singleton
+2017-08-16 11:36:41 TRACE root:29 - properties file is {}
+2017-08-16 11:36:41 TRACE root:29 - getting flashcard with id 1
+2017-08-16 11:36:41 TRACE root:45 - Attempting to get connection to DB
+2017-08-16 11:38:28 TRACE root:22 - creating ConnectionUtil singleton
+2017-08-16 11:38:28 TRACE root:25 - properties file is {}
+2017-08-16 11:38:28 TRACE root:27 - jdbc:oracle:thin:@orcl.cixj48tduq7e.us-west-2.rds.amazonaws.com:1521:ORCL
+2017-08-16 11:38:28 TRACE root:29 - getting flashcard with id 1
+2017-08-16 11:38:28 TRACE root:42 - Attempting to get connection to DB
+2017-08-16 11:39:02 TRACE root:22 - creating ConnectionUtil singleton
+2017-08-16 11:39:02 TRACE root:25 - properties file is {}
+2017-08-16 11:39:02 TRACE root:27 - jdbc:oracle:thin:@orcl.cixj48tduq7e.us-west-2.rds.amazonaws.com:1521:ORCL
+2017-08-16 11:39:02 TRACE root:29 - getting flashcard with id 1
+2017-08-16 11:39:02 TRACE root:42 - Attempting to get connection to DB
+2017-08-16 11:39:02 TRACE root:44 - 
+2017-08-16 11:39:12 TRACE root:22 - creating ConnectionUtil singleton
+2017-08-16 11:39:12 TRACE root:25 - properties file is {}
+2017-08-16 11:39:12 TRACE root:27 - jdbc:oracle:thin:@orcl.cixj48tduq7e.us-west-2.rds.amazonaws.com:1521:ORCL
+2017-08-16 11:39:12 TRACE root:29 - getting flashcard with id 1
+2017-08-16 11:39:13 TRACE root:42 - Attempting to get connection to DB
+2017-08-16 11:39:13 TRACE root:44 -  null
+2017-08-16 11:40:02 TRACE root:22 - creating ConnectionUtil singleton
+2017-08-16 11:40:02 TRACE root:24 - properties file is {}
+2017-08-16 11:40:02 TRACE root:26 - jdbc:oracle:thin:@orcl.cixj48tduq7e.us-west-2.rds.amazonaws.com:1521:ORCL
+2017-08-16 11:40:02 TRACE root:29 - getting flashcard with id 1
+2017-08-16 11:40:02 TRACE root:41 - Attempting to get connection to DB
+2017-08-16 11:40:02 TRACE root:43 -  {url=jdbc:oracle:thin:@orcl.cixj48tduq7e.us-west-2.rds.amazonaws.com:1521:ORCL, driver=oracle.jdbc.driver.OracleDriver, pwd=p4ssw0rd, usr=flashcard}
+2017-08-16 11:41:14 TRACE root:22 - creating ConnectionUtil singleton
+2017-08-16 11:41:14 TRACE root:24 - properties file is {}
+2017-08-16 11:41:14 TRACE root:26 - jdbc:oracle:thin:@orcl.cixj48tduq7e.us-west-2.rds.amazonaws.com:1521:ORCL
+2017-08-16 11:41:14 TRACE root:29 - getting flashcard with id 1
+2017-08-16 11:41:14 TRACE root:41 - Attempting to get connection to DB
+2017-08-16 11:41:14 TRACE root:43 -  {url=jdbc:oracle:thin:@orcl.cixj48tduq7e.us-west-2.rds.amazonaws.com:1521:ORCL, driver=oracle.jdbc.driver.OracleDriver, pwd=p4ssw0rd, usr=flashcard}
+2017-08-16 12:12:05 INFO  root:22 - 7
