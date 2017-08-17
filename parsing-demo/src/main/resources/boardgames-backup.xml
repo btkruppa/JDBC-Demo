@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<board-games>
+  <board-game id="1">
+    <title>Monopoly</title>
+    <duration>3.0</duration>
+    <max-players>8</max-players>
+  </board-game>
+  <board-game id="2">
+    <title>Settlers of Catan</title>
+    <duration>2.5</duration>
+    <max-players>6</max-players>
+  </board-game>
+  <board-game id="3">
+    <title>Dominion</title>
+    <duration>1.5</duration>
+    <max-players>4</max-players>
+  </board-game>
+  <board-game id="4">
+    <title>Twilight Imperium</title>
+    <duration>8.0</duration>
+    <max-players>10</max-players>
+  </board-game>
+</board-games>
